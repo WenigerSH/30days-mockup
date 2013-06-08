@@ -82,15 +82,15 @@
 						</object>
 						<object class="NSCustomResource" key="IBUINormalImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">menu.png</string>
+							<string key="NSResourceName">menu</string>
 						</object>
 					</object>
 				</object>
 				<string key="NSFrameSize">{320, 460}</string>
 				<reference key="NSSuperview"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
-					<int key="NSColorSpace">1</int>
-					<bytes key="NSRGB">MC41NzA4NDAyMzk1IDAuODY3MzQ2OTQyNCAwLjc5MTEzMzk5OTgAA</bytes>
+					<int key="NSColorSpace">2</int>
+					<bytes key="NSRGB">MC4yNzg0MzEzODU4IDAuNzg4MjM1MzY2MyAwLjY4NjI3NDUyODUAA</bytes>
 				</object>
 				<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
 				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>
@@ -457,12 +457,12 @@
 			<bool key="EncodedWithXMLCoder">YES</bool>
 			<object class="NSArray" key="dict.sortedKeys">
 				<bool key="EncodedWithXMLCoder">YES</bool>
-				<string>menu.png</string>
+				<string>menu</string>
 				<string>nav1.png</string>
 			</object>
 			<object class="NSMutableArray" key="dict.values">
 				<bool key="EncodedWithXMLCoder">YES</bool>
-				<string>{94, 85}</string>
+				<string>{128, 128}</string>
 				<string>{546, 86}</string>
 			</object>
 		</object>

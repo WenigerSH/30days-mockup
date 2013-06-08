@@ -7,7 +7,9 @@
 
 #import "StartGetupController.h"
 
+
 @implementation StartGetupController
+
 
 -(IBAction)switchOk {
 	StartGetupConfirmController *screen = [[StartGetupConfirmController alloc] initWithNibName:nil bundle:nil];

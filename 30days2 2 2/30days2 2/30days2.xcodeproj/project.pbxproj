@@ -45,6 +45,14 @@
 		462C1F8D17628D5F00A0C873 /* tut2.png in Resources */ = {isa = PBXBuildFile; fileRef = 462C1F6F17628D5F00A0C873 /* tut2.png */; };
 		462C1F8E17628D5F00A0C873 /* tutorial1.png in Resources */ = {isa = PBXBuildFile; fileRef = 462C1F7017628D5F00A0C873 /* tutorial1.png */; };
 		462C1F8F17628D5F00A0C873 /* tutorial2.png in Resources */ = {isa = PBXBuildFile; fileRef = 462C1F7117628D5F00A0C873 /* tutorial2.png */; };
+		462C20031763A1B500A0C873 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 462C20021763A1B500A0C873 /* MediaPlayer.framework */; };
+		462C202B1763ACB800A0C873 /* tutorialmovie.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 462C202A1763ACB800A0C873 /* tutorialmovie.mp4 */; };
+		462C20551763BBFD00A0C873 /* opencourseinfo1.png in Resources */ = {isa = PBXBuildFile; fileRef = 462C20511763BBFD00A0C873 /* opencourseinfo1.png */; };
+		462C20561763BBFD00A0C873 /* opencourseinfo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 462C20521763BBFD00A0C873 /* opencourseinfo2.png */; };
+		462C20571763BBFD00A0C873 /* opencourseinfo3.png in Resources */ = {isa = PBXBuildFile; fileRef = 462C20531763BBFD00A0C873 /* opencourseinfo3.png */; };
+		462C20581763BBFD00A0C873 /* opencoursepage.png in Resources */ = {isa = PBXBuildFile; fileRef = 462C20541763BBFD00A0C873 /* opencoursepage.png */; };
+		462C205C1763BC5E00A0C873 /* openCourse.xib in Resources */ = {isa = PBXBuildFile; fileRef = 462C205B1763BC5E00A0C873 /* openCourse.xib */; };
+		462C20611763BC8200A0C873 /* OpenCourseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 462C205F1763BC8200A0C873 /* OpenCourseController.m */; };
 		4696C75217627248003F11D1 /* registerPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4696C75117627248003F11D1 /* registerPage.xib */; };
 		4696C75717627272003F11D1 /* RegisterPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4696C75617627272003F11D1 /* RegisterPageController.m */; };
 		4696C7AC17627E34003F11D1 /* login.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4696C7AB17627E34003F11D1 /* login.xib */; };
@@ -100,13 +108,22 @@
 		462C1F6F17628D5F00A0C873 /* tut2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tut2.png; sourceTree = "<group>"; };
 		462C1F7017628D5F00A0C873 /* tutorial1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tutorial1.png; sourceTree = "<group>"; };
 		462C1F7117628D5F00A0C873 /* tutorial2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tutorial2.png; sourceTree = "<group>"; };
+		462C20021763A1B500A0C873 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		462C202A1763ACB800A0C873 /* tutorialmovie.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = tutorialmovie.mp4; sourceTree = "<group>"; };
+		462C20511763BBFD00A0C873 /* opencourseinfo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = opencourseinfo1.png; sourceTree = "<group>"; };
+		462C20521763BBFD00A0C873 /* opencourseinfo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = opencourseinfo2.png; sourceTree = "<group>"; };
+		462C20531763BBFD00A0C873 /* opencourseinfo3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = opencourseinfo3.png; sourceTree = "<group>"; };
+		462C20541763BBFD00A0C873 /* opencoursepage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = opencoursepage.png; sourceTree = "<group>"; };
+		462C205B1763BC5E00A0C873 /* openCourse.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = openCourse.xib; sourceTree = "<group>"; };
+		462C205F1763BC8200A0C873 /* OpenCourseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OpenCourseController.m; path = ../OpenCourseController.m; sourceTree = "<group>"; };
+		462C20601763BC8200A0C873 /* OpenCourseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenCourseController.h; path = ../OpenCourseController.h; sourceTree = "<group>"; };
 		4696C75117627248003F11D1 /* registerPage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = registerPage.xib; sourceTree = "<group>"; };
 		4696C75517627272003F11D1 /* RegisterPageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegisterPageController.h; path = ../RegisterPageController.h; sourceTree = "<group>"; };
 		4696C75617627272003F11D1 /* RegisterPageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegisterPageController.m; path = ../RegisterPageController.m; sourceTree = "<group>"; };
 		4696C7AB17627E34003F11D1 /* login.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = login.xib; sourceTree = "<group>"; };
 		4696C7AE17627E60003F11D1 /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginController.h; path = ../LoginController.h; sourceTree = "<group>"; };
 		4696C7AF17627E60003F11D1 /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginController.m; path = ../LoginController.m; sourceTree = "<group>"; };
-		46FA0ECA175F785300FA8A5B /* Getup.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Getup.xib; sourceTree = "<group>"; };
+		46FA0ECA175F785300FA8A5B /* Getup.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Getup.xib; path = ../Getup.xib; sourceTree = "<group>"; };
 		46FA0ECD175F787200FA8A5B /* GetupController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GetupController.h; path = ../GetupController.h; sourceTree = "<group>"; };
 		46FA0F12175FDB4800FA8A5B /* startGetup.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = startGetup.xib; sourceTree = "<group>"; };
 		46FA0F15175FDB8000FA8A5B /* StartGetupController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StartGetupController.h; path = ../StartGetupController.h; sourceTree = "<group>"; };
@@ -126,6 +143,7 @@
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				462C20031763A1B500A0C873 /* MediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +153,10 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				462C205F1763BC8200A0C873 /* OpenCourseController.m */,
+				462C20601763BC8200A0C873 /* OpenCourseController.h */,
+				46FA0ECA175F785300FA8A5B /* Getup.xib */,
+				462C205B1763BC5E00A0C873 /* openCourse.xib */,
 				4696C7AE17627E60003F11D1 /* LoginController.h */,
 				4696C7AF17627E60003F11D1 /* LoginController.m */,
 				4696C7AB17627E34003F11D1 /* login.xib */,
@@ -167,7 +189,6 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				46FA0ECA175F785300FA8A5B /* Getup.xib */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -201,6 +222,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				462C20021763A1B500A0C873 /* MediaPlayer.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
@@ -211,6 +233,11 @@
 		462C1F5317628D5F00A0C873 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				462C20511763BBFD00A0C873 /* opencourseinfo1.png */,
+				462C20521763BBFD00A0C873 /* opencourseinfo2.png */,
+				462C20531763BBFD00A0C873 /* opencourseinfo3.png */,
+				462C20541763BBFD00A0C873 /* opencoursepage.png */,
+				462C202A1763ACB800A0C873 /* tutorialmovie.mp4 */,
 				462C1F5417628D5F00A0C873 /* back.png */,
 				462C1F5517628D5F00A0C873 /* backconfirmnav.png */,
 				462C1F5617628D5F00A0C873 /* backformnav.png */,
@@ -331,6 +358,12 @@
 				462C1F8D17628D5F00A0C873 /* tut2.png in Resources */,
 				462C1F8E17628D5F00A0C873 /* tutorial1.png in Resources */,
 				462C1F8F17628D5F00A0C873 /* tutorial2.png in Resources */,
+				462C202B1763ACB800A0C873 /* tutorialmovie.mp4 in Resources */,
+				462C20551763BBFD00A0C873 /* opencourseinfo1.png in Resources */,
+				462C20561763BBFD00A0C873 /* opencourseinfo2.png in Resources */,
+				462C20571763BBFD00A0C873 /* opencourseinfo3.png in Resources */,
+				462C20581763BBFD00A0C873 /* opencoursepage.png in Resources */,
+				462C205C1763BC5E00A0C873 /* openCourse.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +382,7 @@
 				46FA0FAD175FF32200FA8A5B /* GetupController.m in Sources */,
 				4696C75717627272003F11D1 /* RegisterPageController.m in Sources */,
 				4696C7B017627E60003F11D1 /* LoginController.m in Sources */,
+				462C20611763BC8200A0C873 /* OpenCourseController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

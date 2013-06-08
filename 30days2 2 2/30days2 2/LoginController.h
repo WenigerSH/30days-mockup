@@ -13,4 +13,7 @@
 
 }
 
+-(IBAction)switchConfirm;
+-(IBAction)switchBack;
+
 @end

@@ -8,12 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "GetupController.h"
+#import "OpenCourseController.h"
 
 @interface _0days2ViewController : UIViewController {
 
 }
 
 -(IBAction)switchGetup;	
+-(IBAction)switchOpenCourse;
 
 @end
 

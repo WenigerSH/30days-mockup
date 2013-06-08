@@ -1,7 +1,19 @@
 
 #import "GetupController.h"
+#import <MediaPlayer/MediaPlayer.h>
 
 @implementation GetupController
+
+
+-(IBAction)playMovie {
+	NSBundle *bundle = [NSBundle mainBundle];
+	NSString *moviePath = [bundle pathForResource:@"tutorialmovie" ofType:@"mp4"];
+	NSURL *movieURL = [[NSURL fileURLWithPath:moviePath] retain];
+	
+	MPMoviePlayerViewController *theMovie =[[MPMoviePlayerViewController alloc] initWithContentURL:movieURL];
+	
+	[self presentModalViewController:theMovie animated:NO];	
+}
 
 -(IBAction)startCourse {
 	StartGetupController *screen = [[StartGetupController alloc] initWithNibName:nil bundle:nil];
@@ -50,10 +62,11 @@
 	[tutorial1View setImage:tutorial1Image];
 	[scrollTutorialView addSubview:tutorial1View];
 	
-	UIImage *tutorial2Image = [UIImage imageNamed:@"tutorial2.png"];
-	UIImageView *tutorial2View = [[UIImageView alloc]initWithFrame:CGRectMake(320, 0, 320, 392)];
-	[tutorial2View setImage:tutorial2Image];
-	[scrollTutorialView addSubview:tutorial2View];
+	UIImage *tutorial2Image = [UIImage imageNamed:@"tutorial2.png"];	
+	UIButton *tutorial2Button = [[UIButton alloc]initWithFrame:CGRectMake(320, 0, 320, 392)];
+	[tutorial2Button setImage:tutorial2Image forState:UIControlStateNormal];
+	[tutorial2Button addTarget:self action:@selector(playMovie) forControlEvents:UIControlEventTouchUpInside];
+	[scrollTutorialView addSubview:tutorial2Button];
 	
 	// Start course button
 

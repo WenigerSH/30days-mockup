@@ -10,6 +10,13 @@
 
 @implementation _0days2ViewController
 
+-(IBAction)switchOpenCourse {
+	OpenCourseController *screen = [[OpenCourseController alloc] initWithNibName:nil bundle:nil];
+	screen.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+	[self presentModalViewController:screen animated:YES];
+	[screen release];
+}
+
 -(IBAction)switchGetup {
 
 	GetupController *screen = [[GetupController alloc] initWithNibName:nil bundle:nil];
@@ -65,9 +72,9 @@
 	UIImage *getup2Image = [UIImage imageNamed:@"ptak2.png"];	
 	UIButton *getupButton = [[UIButton alloc]initWithFrame:CGRectMake(47, 0, 273, 169)];
 	[getupButton setImage:getup2Image forState:UIControlStateNormal];
-	 [getupButton setAlpha:0.67];
-	[getupButton addTarget:self action:@selector(switchGetup) forControlEvents:UIControlEventTouchUpInside];
-	 [scrollView addSubview:getupButton];
+	[getupButton setAlpha:0.67];
+	[getupButton addTarget:self action:@selector(switchOpenCourse) forControlEvents:UIControlEventTouchUpInside];
+	[scrollView addSubview:getupButton];
 	
 	//
 	// Run view and Button
@@ -99,7 +106,7 @@
 	UIImage *atworkImage = [UIImage imageNamed:@"parwork.png"];	
 	UIButton *atworkButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 338, 320, 169)];
 	[atworkButton setImage:atworkImage forState:UIControlStateNormal];
-	//[atworkButton addTarget:self action:@selector() forControlEvents:UIControlEventTouchUpInside];
+	[atworkButton addTarget:self action:@selector(switchGetup) forControlEvents:UIControlEventTouchUpInside];
 	[scrollView addSubview:atworkButton];
 	
 	[scrollView setPagingEnabled:NO];
