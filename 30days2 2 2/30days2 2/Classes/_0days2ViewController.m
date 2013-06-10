@@ -64,10 +64,10 @@
 	
 	CGRect scrollViewFrame = CGRectMake(0, 40, 320, 420);
 	UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:scrollViewFrame];
-	[scrollView setBounces:NO];
+	[scrollView setBounces:YES];
 	[self.view addSubview:scrollView];
 	
-	CGSize scrollViewContentSize = CGSizeMake(320, 420);
+	CGSize scrollViewContentSize = CGSizeMake(320, 421);
 	[scrollView setContentSize:scrollViewContentSize];
 	
 	//
@@ -75,7 +75,7 @@
 	//
 	
 	UIImage *getup1Image = [UIImage imageNamed:@"getup1.png"];
-	UIImage *getup2Image = [UIImage imageNamed:@"getup2.png"];
+	UIImage *getup2Image = [UIImage imageNamed:@"getup22.png"];
 	UIButton *getupButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 320, 141)];
 	[getupButton setImage:getup1Image forState:UIControlStateNormal];
 	[getupButton setImage:getup2Image forState:UIControlStateHighlighted];
@@ -87,7 +87,7 @@
 	//
 	
 	UIImage *run1Image = [UIImage imageNamed:@"run1.png"];
-	UIImage *run2Image = [UIImage imageNamed:@"run2.png"];	
+	UIImage *run2Image = [UIImage imageNamed:@"run22.png"];	
 	UIButton *runButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 141, 320, 141)];
 	[runButton setImage:run1Image forState:UIControlStateNormal];
 	[runButton setImage:run2Image forState:UIControlStateHighlighted];
@@ -99,7 +99,7 @@
 	//
 	
 	UIImage *atworkImage = [UIImage imageNamed:@"punctuality1.png"];
-	UIImage *atwork2Image = [UIImage imageNamed:@"punctuality2.png"];	
+	UIImage *atwork2Image = [UIImage imageNamed:@"punctuality22.png"];	
 	UIButton *atworkButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 282, 320, 141)];
 	[atworkButton setImage:atworkImage forState:UIControlStateNormal];
 	[atworkButton setImage:atwork2Image forState:UIControlStateHighlighted];
