@@ -65,6 +65,9 @@
 		46FED1D21766083600B990C6 /* register2.png in Resources */ = {isa = PBXBuildFile; fileRef = 46FED1B11766083600B990C6 /* register2.png */; };
 		46FED210176611F300B990C6 /* nextbutton2.png in Resources */ = {isa = PBXBuildFile; fileRef = 46FED20F176611F300B990C6 /* nextbutton2.png */; };
 		46FED212176611FA00B990C6 /* nextbutton1.png in Resources */ = {isa = PBXBuildFile; fileRef = 46FED211176611FA00B990C6 /* nextbutton1.png */; };
+		46FED267176627F300B990C6 /* 30days_icon_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 46FED266176627F300B990C6 /* 30days_icon_small.png */; };
+		46FED269176627FA00B990C6 /* 30days_icon_large.png in Resources */ = {isa = PBXBuildFile; fileRef = 46FED268176627FA00B990C6 /* 30days_icon_large.png */; };
+		46FED26D1766288400B990C6 /* splashscreeniphone4.png in Resources */ = {isa = PBXBuildFile; fileRef = 46FED26C1766288400B990C6 /* splashscreeniphone4.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -136,6 +139,9 @@
 		46FED1B11766083600B990C6 /* register2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = register2.png; sourceTree = "<group>"; };
 		46FED20F176611F300B990C6 /* nextbutton2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nextbutton2.png; sourceTree = "<group>"; };
 		46FED211176611FA00B990C6 /* nextbutton1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nextbutton1.png; sourceTree = "<group>"; };
+		46FED266176627F300B990C6 /* 30days_icon_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 30days_icon_small.png; sourceTree = "<group>"; };
+		46FED268176627FA00B990C6 /* 30days_icon_large.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 30days_icon_large.png; sourceTree = "<group>"; };
+		46FED26C1766288400B990C6 /* splashscreeniphone4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splashscreeniphone4.png; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* _0days2-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "_0days2-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -238,6 +244,9 @@
 		462C1F5317628D5F00A0C873 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				46FED26C1766288400B990C6 /* splashscreeniphone4.png */,
+				46FED268176627FA00B990C6 /* 30days_icon_large.png */,
+				46FED266176627F300B990C6 /* 30days_icon_small.png */,
 				462C202A1763ACB800A0C873 /* tutorialmovie.mp4 */,
 				462C1F5417628D5F00A0C873 /* back.png */,
 				462C1F6117628D5F00A0C873 /* loginpage.png */,
@@ -428,6 +437,9 @@
 				46FED1D21766083600B990C6 /* register2.png in Resources */,
 				46FED210176611F300B990C6 /* nextbutton2.png in Resources */,
 				46FED212176611FA00B990C6 /* nextbutton1.png in Resources */,
+				46FED267176627F300B990C6 /* 30days_icon_small.png in Resources */,
+				46FED269176627FA00B990C6 /* 30days_icon_large.png in Resources */,
+				46FED26D1766288400B990C6 /* splashscreeniphone4.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
