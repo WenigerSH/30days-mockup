@@ -24,27 +24,39 @@
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
+	UIImage *navImage = [UIImage imageNamed:@"register-bar.png"];
+	UIImageView *navView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 320, 40)];
+	[navView setImage:navImage];
+	[self.view addSubview:navView];
+	
+	
+	UIImage *menuImage = [UIImage imageNamed:@"back.png"];	
+	UIButton *menuButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 54, 40)];
+	[menuButton setImage:menuImage forState:UIControlStateNormal];
+	[menuButton addTarget:self action:@selector(switchBack) forControlEvents:UIControlEventTouchUpInside];
+	[self.view addSubview:menuButton];
 	
 	// Page scroll view
 	
-	CGRect scrollViewFrame = CGRectMake(0, 43, 320, 417);
+	CGRect scrollViewFrame = CGRectMake(0, 40, 320, 420);
 	UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:scrollViewFrame];
+	[scrollView setBounces:NO];
 	[self.view addSubview:scrollView];
 	
-	CGSize scrollViewContentSize = CGSizeMake(320, 507);
+	CGSize scrollViewContentSize = CGSizeMake(320, 420);
 	[scrollView setContentSize:scrollViewContentSize];
 	
 	[scrollView setPagingEnabled:NO];
 	
 	UIImage *loginImage = [UIImage imageNamed:@"loginpage.png"];
-	UIImageView *loginView = [[UIImageView alloc]initWithFrame:CGRectMake(0, -43, 320, 550)];
+	UIImageView *loginView = [[UIImageView alloc]initWithFrame:CGRectMake(0, -60, 320, 550)];
 	[loginView setImage:loginImage];
 	[scrollView addSubview:loginView];
 	
 	// Confirm button
 	
 	UIImage *nextFormImage = [UIImage imageNamed:@"nextlogin.png"];	
-	UIButton *nextFormButton = [[UIButton alloc]initWithFrame:CGRectMake(172, 312, 80, 41)];
+	UIButton *nextFormButton = [[UIButton alloc]initWithFrame:CGRectMake(172, 295, 80, 41)];
 	[nextFormButton setImage:nextFormImage forState:UIControlStateNormal];
 	[nextFormButton addTarget:self action:@selector(switchConfirm) forControlEvents:UIControlEventTouchUpInside];
 	[scrollView addSubview:nextFormButton];

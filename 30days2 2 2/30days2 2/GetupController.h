@@ -26,6 +26,6 @@
 */
 -(IBAction)switchBack;
 -(IBAction)startCourse;
--(IBAction)startMovie;
+-(IBAction)playMovie;
 
 @end

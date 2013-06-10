@@ -49,30 +49,36 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	
-	CGRect scrollViewFrame = CGRectMake(0, 43, 320, 417);
+	UIImage *navImage = [UIImage imageNamed:@"30bar.png"];
+	UIImageView *navView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 320, 40)];
+	[navView setImage:navImage];
+	[self.view addSubview:navView];
+	
+	
+	UIImage *menuImage = [UIImage imageNamed:@"menu.png"];	
+	UIButton *menuButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 43, 40)];
+	[menuButton setImage:menuImage forState:UIControlStateNormal];
+	//[menuButton addTarget:self action:@selector(switchOpenCourse) forControlEvents:UIControlEventTouchUpInside];
+	[self.view addSubview:menuButton];
+	
+	
+	CGRect scrollViewFrame = CGRectMake(0, 40, 320, 420);
 	UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:scrollViewFrame];
+	[scrollView setBounces:NO];
 	[self.view addSubview:scrollView];
 	
-	CGSize scrollViewContentSize = CGSizeMake(320, 507);
+	CGSize scrollViewContentSize = CGSizeMake(320, 420);
 	[scrollView setContentSize:scrollViewContentSize];
 	
 	//
 	//Getup view and button
 	//
-	UIImage *days1Image = [UIImage imageNamed:@"dni1.png"];
-	UIImageView *days1View = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 47, 169)];
-	[days1View setImage:days1Image];
-	[scrollView addSubview:days1View];
 	
-	UIImage *getup1Image = [UIImage imageNamed:@"ptak1.png"];
-	UIImageView *getup1View = [[UIImageView alloc]initWithFrame:CGRectMake(47, 0, 273, 169)];
-	[getup1View setImage:getup1Image];
-	[scrollView addSubview:getup1View];
-	
-	UIImage *getup2Image = [UIImage imageNamed:@"ptak2.png"];	
-	UIButton *getupButton = [[UIButton alloc]initWithFrame:CGRectMake(47, 0, 273, 169)];
-	[getupButton setImage:getup2Image forState:UIControlStateNormal];
-	[getupButton setAlpha:0.67];
+	UIImage *getup1Image = [UIImage imageNamed:@"getup1.png"];
+	UIImage *getup2Image = [UIImage imageNamed:@"getup2.png"];
+	UIButton *getupButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 320, 141)];
+	[getupButton setImage:getup1Image forState:UIControlStateNormal];
+	[getupButton setImage:getup2Image forState:UIControlStateHighlighted];
 	[getupButton addTarget:self action:@selector(switchOpenCourse) forControlEvents:UIControlEventTouchUpInside];
 	[scrollView addSubview:getupButton];
 	
@@ -80,32 +86,23 @@
 	// Run view and Button
 	//
 	
-	UIImage *days2Image = [UIImage imageNamed:@"dni2.png"];
-	UIImageView *days2View = [[UIImageView alloc]initWithFrame:CGRectMake(0, 169, 47, 169)];
-	[days2View setImage:days2Image];
-	[scrollView addSubview:days2View];
-	
-	
-	UIImage *run1Image = [UIImage imageNamed:@"bieg1.png"];
-	UIImageView *run1View = [[UIImageView alloc]initWithFrame:CGRectMake(47, 169, 273, 169)];
-	[run1View setImage:run1Image];
-	[scrollView addSubview:run1View];
-	
-	
-	UIImage *run2Image = [UIImage imageNamed:@"bieg2.png"];	
-	UIButton *runButton = [[UIButton alloc]initWithFrame:CGRectMake(47, 169, 273, 169)];
-	[runButton setImage:run2Image forState:UIControlStateNormal];
-	[runButton setAlpha:0.67];
-	//[runButton addTarget:self action:@selector() forControlEvents:UIControlEventTouchUpInside];
+	UIImage *run1Image = [UIImage imageNamed:@"run1.png"];
+	UIImage *run2Image = [UIImage imageNamed:@"run2.png"];	
+	UIButton *runButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 141, 320, 141)];
+	[runButton setImage:run1Image forState:UIControlStateNormal];
+	[runButton setImage:run2Image forState:UIControlStateHighlighted];
+	[runButton addTarget:self action:@selector(switchOpenCourse) forControlEvents:UIControlEventTouchUpInside];
 	[scrollView addSubview:runButton];
 	
 	//
 	// Punctuality at work
 	//
 	
-	UIImage *atworkImage = [UIImage imageNamed:@"parwork.png"];	
-	UIButton *atworkButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 338, 320, 169)];
+	UIImage *atworkImage = [UIImage imageNamed:@"punctuality1.png"];
+	UIImage *atwork2Image = [UIImage imageNamed:@"punctuality2.png"];	
+	UIButton *atworkButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 282, 320, 141)];
 	[atworkButton setImage:atworkImage forState:UIControlStateNormal];
+	[atworkButton setImage:atwork2Image forState:UIControlStateHighlighted];
 	[atworkButton addTarget:self action:@selector(switchGetup) forControlEvents:UIControlEventTouchUpInside];
 	[scrollView addSubview:atworkButton];
 	
