@@ -32,8 +32,10 @@
 	
 	
 	UIImage *menuImage = [UIImage imageNamed:@"back.png"];	
+	UIImage *menu2Image = [UIImage imageNamed:@"back2.png"];
 	UIButton *menuButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 54, 40)];
 	[menuButton setImage:menuImage forState:UIControlStateNormal];
+	[menuButton setImage:menu2Image forState:UIControlStateHighlighted];
 	[menuButton addTarget:self action:@selector(switchBack) forControlEvents:UIControlEventTouchUpInside];
 	[self.view addSubview:menuButton];
 	
