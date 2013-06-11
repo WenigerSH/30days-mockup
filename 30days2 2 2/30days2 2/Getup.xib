@@ -43,11 +43,8 @@
 				<string key="NSFrameSize">{320, 460}</string>
 				<reference key="NSSuperview"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
-					<int key="NSColorSpace">3</int>
-					<bytes key="NSWhite">MQA</bytes>
-					<object class="NSColorSpace" key="NSCustomColorSpace">
-						<int key="NSID">2</int>
-					</object>
+					<int key="NSColorSpace">2</int>
+					<bytes key="NSRGB">MC4zMTM3MjU1MDEzIDAuNzgwMzkyMTcgMC43MDU4ODIzNzA1AA</bytes>
 				</object>
 				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -108,7 +105,7 @@
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>GetupController</string>
 					<string>UIResponder</string>
-					<string>{{513, 145}, {320, 480}}</string>
+					<string>{{534, 120}, {320, 480}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				</object>
 			</object>
@@ -128,7 +125,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">22</int>
+			<int key="maxID">23</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -140,8 +137,8 @@
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>playMovie</string>
 							<string>startCourse</string>
-							<string>startMovie</string>
 							<string>switchBack</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
@@ -155,18 +152,18 @@
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>playMovie</string>
 							<string>startCourse</string>
-							<string>startMovie</string>
 							<string>switchBack</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<object class="IBActionInfo">
-								<string key="name">startCourse</string>
+								<string key="name">playMovie</string>
 								<string key="candidateClassName">id</string>
 							</object>
 							<object class="IBActionInfo">
-								<string key="name">startMovie</string>
+								<string key="name">startCourse</string>
 								<string key="candidateClassName">id</string>
 							</object>
 							<object class="IBActionInfo">

@@ -52,7 +52,7 @@
 	
 	CGRect scrollInfoViewFrame = CGRectMake(0, 320, 320, 100);
 	UIScrollView *scrollInfoView = [[UIScrollView alloc] initWithFrame:scrollInfoViewFrame];
-	[scrollInfoView setBounces:NO];
+	[scrollInfoView setBounces:YES];
 	[scrollView addSubview:scrollInfoView];
 	
 	CGSize scrollTutorialViewContentSize = CGSizeMake(960, 100);

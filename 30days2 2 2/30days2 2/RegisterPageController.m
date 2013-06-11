@@ -79,8 +79,10 @@
 	// Sign in button
 	
 	UIImage *signinImage = [UIImage imageNamed:@"signin.png"];	
+	UIImage *signin2Image = [UIImage imageNamed:@"signin2.png"];	
 	UIButton *signinButton = [[UIButton alloc]initWithFrame:CGRectMake(111, 360, 102, 33)];
 	[signinButton setImage:signinImage forState:UIControlStateNormal];
+	[signinButton setImage:signin2Image forState:UIControlStateHighlighted];
 	[signinButton addTarget:self action:@selector(switchLogin) forControlEvents:UIControlEventTouchUpInside];
 	[scrollView addSubview:signinButton];
 	

@@ -14,6 +14,7 @@
 
 }
 
+-(IBAction)switchMenu;
 -(IBAction)switchGetup;	
 -(IBAction)switchOpenCourse;
 

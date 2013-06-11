@@ -60,7 +60,7 @@
 	
 	CGRect scrollTutorialViewFrame = CGRectMake(0, 0, 320, 345);
 	UIScrollView *scrollTutorialView = [[UIScrollView alloc] initWithFrame:scrollTutorialViewFrame];
-	[scrollTutorialView setBounces:NO];
+	[scrollTutorialView setBounces:YES];
 	[scrollView addSubview:scrollTutorialView];
 	
 	CGSize scrollTutorialViewContentSize = CGSizeMake(640, 345);
@@ -85,8 +85,10 @@
 	// Start course button
 
 	UIImage *startCourseImage = [UIImage imageNamed:@"start.png"];	
+	UIImage *startCourse2Image = [UIImage imageNamed:@"start2.png"];
 	UIButton *startCourseButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 345, 320, 75)];
 	[startCourseButton setImage:startCourseImage forState:UIControlStateNormal];
+	[startCourseButton setImage:startCourse2Image forState:UIControlStateHighlighted];
 	[startCourseButton addTarget:self action:@selector(startCourse) forControlEvents:UIControlEventTouchUpInside];
 	[scrollView addSubview:startCourseButton];
 	

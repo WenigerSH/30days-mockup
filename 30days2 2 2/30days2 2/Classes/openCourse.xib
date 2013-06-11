@@ -44,7 +44,7 @@
 				<reference key="NSSuperview"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">2</int>
-					<bytes key="NSRGB">MC4xNjA3ODQzMTkgMC4yMDM5MjE1ODYzIDAuMjUwOTgwNDA3AA</bytes>
+					<bytes key="NSRGB">MC4xNDk2MzUwMzE4IDAuNzgwMzkyMTcgMC42Nzg0MzEzOTE3AA</bytes>
 				</object>
 				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>
 				<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -105,7 +105,7 @@
 					<bool key="EncodedWithXMLCoder">YES</bool>
 					<string>OpenCourseController</string>
 					<string>UIResponder</string>
-					<string>{{354, 276}, {320, 480}}</string>
+					<string>{{544, 275}, {320, 480}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				</object>
 			</object>

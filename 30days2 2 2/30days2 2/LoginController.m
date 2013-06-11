@@ -56,8 +56,10 @@
 	// Confirm button
 	
 	UIImage *nextFormImage = [UIImage imageNamed:@"nextlogin.png"];	
+	UIImage *nextForm2Image = [UIImage imageNamed:@"nextlogin2.png"];	
 	UIButton *nextFormButton = [[UIButton alloc]initWithFrame:CGRectMake(172, 295, 80, 41)];
 	[nextFormButton setImage:nextFormImage forState:UIControlStateNormal];
+	[nextFormButton setImage:nextForm2Image forState:UIControlStateHighlighted];
 	[nextFormButton addTarget:self action:@selector(switchConfirm) forControlEvents:UIControlEventTouchUpInside];
 	[scrollView addSubview:nextFormButton];
 	

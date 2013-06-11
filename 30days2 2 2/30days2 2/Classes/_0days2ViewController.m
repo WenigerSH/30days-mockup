@@ -10,6 +10,10 @@
 
 @implementation _0days2ViewController
 
+-(IBAction)switchMenu {
+	
+}
+
 -(IBAction)switchOpenCourse {
 	OpenCourseController *screen = [[OpenCourseController alloc] initWithNibName:nil bundle:nil];
 	screen.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
@@ -56,9 +60,11 @@
 	
 	
 	UIImage *menuImage = [UIImage imageNamed:@"menu.png"];	
+	UIImage *menu2Image = [UIImage imageNamed:@"menu2.png"];	
 	UIButton *menuButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 43, 40)];
 	[menuButton setImage:menuImage forState:UIControlStateNormal];
-	//[menuButton addTarget:self action:@selector(switchOpenCourse) forControlEvents:UIControlEventTouchUpInside];
+	[menuButton setImage:menu2Image forState:UIControlStateHighlighted];
+	[menuButton addTarget:self action:@selector(switchMenu) forControlEvents:UIControlEventTouchUpInside];
 	[self.view addSubview:menuButton];
 	
 	
